@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8"></meta>
+   <title>金曜日の株価予測</title>
+ </head>
+ <body>
+         <h1>金曜日の日経平均株価が上がるか予測</h1>
+             <hr>
+             金曜日の株価は:<h1>{{rank}}</h1>
+             <hr>
+             <p>月曜日～木曜日の日経平均株価の終値を入力してください</p>
+         <form method='POST' action='/kabuka'>
+
+             <div>
+                 <p>月曜日(Monday):</p>
+                 <p><input type="number" step="0.01"  name="monday"required></p>
+             </tr>
+             </div>
+
+             <div>
+                 <p>火曜日(Tuesday):</p>
+                 <p> <input type="number" step="0.01"  name="tuesday"required></p>
+             </div>
+
+             <div>
+                 <p>水曜日(Wednesday):</p>
+                 <p>  <input type="number" step="0.01" name="wednesday"required></p>
+             </div>
+             <div>
+                 <p>木曜日(Thursday):</p>
+                 <p> <input type="number" step="0.01"  name="thursday"required></p>
+             </div>
+
+
+          <input type="submit" value="予測">
+          </form>
+</body>
+</html>
